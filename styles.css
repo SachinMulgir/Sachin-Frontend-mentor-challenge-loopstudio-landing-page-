@@ -1,0 +1,262 @@
+html{
+    max-width: 1440px;;
+}   
+body{
+    width:100%;
+    margin: 0;
+    padding: 0;
+}
+h1,h2{
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 400;
+}
+a{
+    text-decoration: none;
+}
+a:hover{
+    cursor: pointer;
+    border-bottom:3px solid white;  
+}
+p{
+    font-family: 'Alata', sans-serif;
+    font-weight: 300;
+    margin: 0;
+    padding: 0;
+}
+.logo{
+    color:white;
+    font-weight:600;
+    font-family: 'Alata', sans-serif;
+}
+
+
+/* //HEADER SECTION// */
+.header_section{  
+    margin:0;
+    padding: 25px 10%;
+    background-image: url(images/desktop/image-hero.jpg);
+    background-size: auto;
+    background-repeat: no-repeat; 
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:20px 0;
+}
+.header_logo{
+    font-size:2.5rem;
+    margin: 0;
+    padding: 0;
+   
+}
+.header_navbar{
+    float:right;
+}
+nav a{
+    color:white;
+    font-family: 'Alata', sans-serif;
+    font-size:1.1rem ;
+    font-weight: 400;
+    margin-left:20px;
+    
+}
+.header_heading{
+    color:white;
+    width:50%;
+    font-size:4.5rem;
+    border:3px solid white;
+    padding:25px 45px;
+    margin:110px 0;
+    font-weight: 500; 
+}
+
+
+/* // INTRO SECTION // */
+.intro_section{
+    width:80%;
+    margin:0 auto;
+    padding:100px;
+    display:grid;
+    grid-template-columns: repeat(1,1fr);
+    grid-template-rows: 1fr;
+}
+.intro_img_div{
+    grid-column:1/2;
+    grid-row: 1/2;
+    place-self: start start;
+}
+.intro_summary{
+    grid-column:1/2;
+    grid-row: 1/2;
+    place-self:end end;
+    width:42%;
+    z-index:1;
+    background-color: white;
+    padding:60px 0 0 70px;
+}
+.intro_heading{
+    font-size: 3rem;
+    font-weight:400;
+    color:black;
+    margin: 0 0 40px;
+    padding: 0;
+}
+.intro_para{
+    font-family: 'Alata', sans-serif;
+    color:hsl(0, 0%, 41%);
+    font-weight:400;
+    font-size:1rem;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* // GRID SECTION // */
+
+.grid_section{
+    width:80%;
+    margin:0 auto 150px;
+
+}
+.grid_header_section{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 70px;
+}
+.grid_heading{
+    font-size:2.5rem;
+    font-weight:500;
+    letter-spacing: 2px;
+    margin:0;
+    padding: 0;
+}
+.grid_button{
+    padding:12px 40px;
+    border:2px solid black;
+    background-color: white;
+}
+.grid_button:hover{
+    background-color: black;
+    color:white;
+    cursor: pointer;
+}
+.grid_button p{ 
+    margin: 0;
+    padding: 0;
+    font-family: 'Josefin Sans', sans-serif;
+    letter-spacing: .2rem;
+    font-weight: 600;   
+}
+
+.grid_body{
+    display:grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(2,1fr);
+    grid-gap:20px;
+}
+.grid_item{
+    position: relative;
+}
+.grid_img{
+    width:100%;
+    height:100%;
+    place-self: start start;
+}
+.item1{
+    grid-column:1/2;
+    grid-row:1/2;
+}
+.item2{
+    grid-column:2/3;
+    grid-row:1/2;
+}
+.item3{
+    grid-column:3/4;
+    grid-row:1/2;
+}
+.item4{
+    grid-column:4/5;
+    grid-row:1/2;
+}
+.item5{
+    grid-column:1/2;
+    grid-row:2/3;
+}
+.item6{
+    grid-column:2/3;
+    grid-row:2/3;
+}
+.item7{
+    grid-column:3/4;
+    grid-row:2/3;
+}
+.item8{
+    grid-column:4/5;
+    grid-row:2/3;
+}
+
+.grid_item_text{
+    font-family: 'Josefin Sans', sans-serif;
+    color:white;
+    width:45%;
+    font-weight:400;
+    font-size:2rem;
+    opacity:.9;
+    padding: 0;
+    margin: 0;
+    position:absolute;
+    left:40px;
+    bottom: 30px;
+}
+.item3_heading,.item5_heading{
+    width:70%
+}
+
+
+/* // FOOTER SECTION // */
+
+.footer_section{
+    background:black;
+    margin: 0;
+    padding: 0 10%;
+}
+.footer_logo_div{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.footer_logo{
+    font-size:2rem;
+    margin-top: 50px;
+}
+.footer_icon{
+    width:25px;
+    margin-left:15px;
+    border-bottom: 0px solid black;
+    text-decoration: none;
+    transition:all ease-in-out 200ms;
+}
+.footer_icon:hover{
+    cursor: pointer;
+    border-bottom:3px solid white;  
+}
+
+.footer_navitem1{
+    margin: 0;
+}
+.footer_navbar_para{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 50px;
+}
+.footer_para{
+    opacity:.5;
+    text-align:right;
+    font-weight:500;
+    color:white;
+}
+
